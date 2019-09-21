@@ -1,0 +1,116 @@
+<div class="container">
+    <h2>Menu Kantin</h2>
+    <p>Berikut adalah daftar menu kantin klik 
+            <button type="button" class="btn btn-tambah" (click)="onAddModal()">
+                    <i class="fa fa-plus"></i>
+            </button> untuk menambah data</p>
+    <table class="table tbl-kantin">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Menu</th>
+          <th>Jenis</th>
+          <th>Harga</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let item of items;let i = index">
+                <td>{{(i+1)}}</td>
+                <td>{{item.nama}}</td>
+                <td>{{item.jenis}}</td>
+                <td>{{item.harga}}</td>
+                <td class="td-action">
+                      <button type="button" class="btn btn-sm bg-flex-2 btn-edit"
+                              (click)="onEditModal(item)">
+                              <i class="fa fa-pencil"></i></button>
+                       <button type="button" class="btn btn-sm bg-flex btn-hapus"
+                              (click)="onDeleteModal(item)">
+                              <i class="fa fa-trash-o"></i></button>
+                   </td>
+              </tr>   
+      </tbody>
+    </table>
+  </div>
+
+
+
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">{{modalTitle}}</h4>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group">
+                      <label for="nama">Menu:</label>
+                      <input [(ngModel)]="selectedItem.nama" id="nama" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="jenis">Jenis:</label>
+                      <input [(ngModel)]="selectedItem.jenis" id="jenis" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="harga">Harga:</label>
+                      <input [(ngModel)]="selectedItem.harga" id="harga" type="number"
+                                placeholder="input number"
+                                type="text" class="form-control">
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button *ngIf="btnStatus==0" type="button" class="btn btn-sm bg-flex btn-pop btn-info" aria-label="add"
+                    (click)="doSave()">
+                    Save
+                  </button>
+                  <button *ngIf="btnStatus==1" type="button" class="btn btn-sm bg-flex btn-pop btn-info" aria-label="add"
+                    (click)="doUpdate()">
+                    Update
+                  </button>
+                  <button type="button" class="btn btn-sm bg-flex btn-pop btn-danger" aria-label="close"
+                        data-dismiss="modal">Close
+                  </button>
+            </div>
+          </div>
+        
+        </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+        
+  <!-- Modal Delete-->
+  <div id="modalHapus" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Hapus</h4>
+            </div>
+            <div class="modal-body">
+              Yakin ingin menghapus?
+            </div>
+            <div class="modal-footer">
+                <button  type="button" class="btn btn-sm bg-flex btn-pop btn-info" aria-label="Yes"
+                  (click)="hapus()">
+                  Yes
+                </button>
+                
+                <button type="button" class="btn btn-sm bg-flex btn-pop btn-danger" aria-label="close"
+                      data-dismiss="modal">No
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>

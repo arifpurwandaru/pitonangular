@@ -1,0 +1,587 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    color: #455161;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #6c7683;
+    border-bottom: 1px solid #445060;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10
+}
+
+a {
+    cursor: pointer;
+    color: #6d7783;
+}
+
+a:hover {
+    opacity: 0.7;
+    color: #979ca0;
+    transition: all 0.3s ease-in-out;;
+}
+
+main {
+    width: 100%;
+    left: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: block;
+}
+
+.col-right {
+    float: right;
+}
+
+.col-right {
+    float: left;
+}
+
+.enteries {
+    float: left;
+    margin-top: 5px;
+    margin-left: -14px;
+    color: #445060;
+}
+
+.paging {
+    float: right;
+    margin: -15px
+}
+
+.help-block {
+    font-size: 12px;
+}
+
+.logo-app {
+    width: 30%;
+    height: auto;
+    margin-bottom: 12px
+}
+
+.row-login {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.row-form {
+    margin-top: 20px
+}
+
+.icon-login {
+    background: #7d6958;
+    border: 1px solid #7d6958;
+}
+
+.form-login {
+    height: 38px;
+}
+
+.toggle-menu {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+    float: left;
+    padding: 8px 20px 15px 9px;
+    background-color: #445060;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.toggle-menu:hover {
+    opacity: 1;
+}
+
+.sidebar_menu {
+    position: fixed;
+    width: 250px;
+    margin-left: -250px;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #445060;
+    /*opacity: 0.9;*/
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.fa-times-circle {
+    right: 10px;
+    top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    color: #DDD;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-times-circle:hover {
+    opacity: 1;
+}
+
+.top-site {
+    width: 100%;
+    height: 50px;
+    background: #d8d8d8;
+    opacity: 0.7;
+    padding: 10px;
+}
+
+.title-page {
+    font-family: "Arial";
+    font-weight: 200;
+    color: #455161;
+    float: left;
+    margin-top: 3px;
+    margin-left: 18px;
+}
+
+.boxed-item {
+    font-family: 'Arial';
+    font-weight: 200;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid 1px white;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.font-bold {
+    font-weight: 800;
+}
+
+.side-search {
+    margin: 10px;
+    width: 230px;
+    left: 0;
+    right: auto;
+}
+
+.btn-side-search {
+    height: 34px;
+    background-color: #ecf0f3;
+    box-shadow: 0px 0px 5px #888888;
+    z-index: 12;
+}
+
+.nav_selection {
+    font-family: "Arial";
+    margin: 25px 0;
+    display: block;
+    width: 275px;
+    margin-left: -33px;
+}
+
+.nav_item {
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.9;
+    border-bottom: solid 1px #6d7783;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_item:hover {
+    width: auto;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.show_menu {
+    margin-left: 0px;
+}
+
+.row-theme {
+    width: 100%;
+    height: auto;
+}
+
+.icon-app {
+    width: 75px;
+    height: auto;
+    background: transparent;
+    padding: 5px;
+    left: 0;
+    z-index: 100
+}
+
+.app-name {
+    color: #fff;
+    margin-top: 14px;
+    margin-right: 80px;
+    width: auto;
+}
+
+.col-search {
+    float: right;
+}
+
+.hi {
+    color: #ecf0f3;
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.user-login {
+    color: #ecf0f3;
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    width: auto;
+    cursor: pointer;
+}
+
+.user-login:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-logout {
+    float: right;
+    width: 30px;
+    margin: 7px
+}
+
+.icon-user {
+    font-size: 20px;
+    font-weight: 400
+}
+
+.add_new {
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.del-all {
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.ktp-action {
+    text-align: center;
+    width: 170px;
+}
+
+.btn_action {
+    text-align: center;
+    position: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+    bottom: 5px;
+    position: fixed;
+    cursor: pointer;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.copyright:hover {
+    color: #979ca0;
+    transition: all 0.3s ease-in-out;
+}
+
+.version {
+    float: right;
+    margin: 10px;
+    color: #7d6958;
+}
+
+.img-pe-pnf {
+    width: 100%;
+    height: auto;
+    top: 30%;
+    bottom: 30%;
+    margin: 20px;
+}
+
+.foot-pe-pnf {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    border-top: 0px solid #d8d8d8;
+    bottom: 0
+}
+
+.logo-btpn-pe-pnf {
+    text-align: center;
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px
+}
+
+.title-form {
+    font-family: 'Arial';
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.bg-form {
+    background-color: #edf0f2;
+    border-radius: 7px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    /*line-height: 34px !important;*/
+}
+
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 3px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+/* ------------- Fazrin CSS Start -------------*/
+.no-padding { padding : 0px; }
+.bg-dark {background-color: #6c7683; color:#fff; font-weight: bold;} 
+.has-error{border: 1px solid #ff6262; border-radius: 5px;}
+.dropdown-has-error span.select2-container{border: 1px solid #ff6262; border-radius: 5px;}
+.scrolled-div{
+    max-height: 175px;
+    overflow-y: scroll;
+    background: white;
+    margin-bottom: 10px;
+}
+/* ------------- Fazrin CSS End -------------*/
+
+/* ------------- PLEASE WAIT --------------- */
+.bg-please-wait {
+    background: #373a3c;
+    height: 100%;
+    width: 100%;
+    margin-left: -31px;
+    margin-top: -2px;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+.bg-please-wait-1 {
+    background: rgba(128, 157, 176, 0.57);
+    height: 100%;
+    width: 100%;
+    margin-left: -16px;
+    margin-top: -2px;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+.bg-please-wait-2 {
+    background: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-left: -31px;
+    margin-top: -2px;
+    padding: 20%;
+    position: fixed;
+    z-index: 2000;
+}
+
+.please-wait {
+    color: #fff;
+    margin: 0;
+    font: .8em verdana;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    z-index: 2;
+}
+
+.please-wait-2 {
+    color: #373a3c;
+    margin: 0;
+    font: .8em verdana;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    z-index: 2;
+}
+
+.loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .19em;
+    background: #007DB6;
+    border-radius: .6em;
+    -webkit-animation: loading 1s infinite alternate;
+    animation: loading 1s infinite alternate;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(2) {
+    background: #008FB2;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(3) {
+    background: #009B9E;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(4) {
+    background: #00A77D;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(5) {
+    background: #00B247;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(6) {
+    background: #5AB027;
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    z-index: 2;
+}
+
+.loading span:nth-of-type(7) {
+    background: #A0B61E;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    z-index: 2;
+}
+
+/*--- ANIMASI --- */
+@-webkit-keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+label.col-sm-4, .col-sm-4.flag-label {
+    font-size: 13px!important;
+    /*line-height: 34px;*/
+}
+
+input, textarea, select, btpn-filter-selection, 
+btpn-filter-selection li,
+li.select2-results__option,
+li.select2-results__option, table tr, table th,
+.account-info{
+    font-size: 13px!important;
+}
+
+/*modal z-index is 1040*/
+.alertify-logs{
+    z-index: 1100;
+}
+
+.control-label {
+    font-size: 13px!important;
+    padding-top: 0px;
+    text-align:left!important;
+}
+
+.info-label {
+    font-size: 14px!important;
+    padding-top: 0px;
+    text-align:left!important;
+}
+
+.form-horizontal .control-label{
+    padding-top: 0px;
+    text-align: left;
+    font-size:13px;
+}
+
+.load-data{
+    background: url("../images/ajax-loader.gif") no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 35px;
+    margin-bottom: 10px;
+    /*position: relative;*/
+}
+
+.fes-modal .modal-header{
+    background-color: #6c7683;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    label.col-sm-4, .col-sm-4.flag-label {
+        font-size: 11px!important;
+        padding: 0px 0 0 15px;
+    }
+
+    .bg-form{
+        width: 70%!important;
+    }
+}
+
+.sub-header{
+    color: #fff;
+    background: #6c7683;
+    font-weight: bold;
+    margin: 10px -15px;
+    padding: 5px 15px;
+}
+
+.alertify{
+    z-index: 1200;
+}
